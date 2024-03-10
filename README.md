@@ -2,4 +2,4 @@
 
 Backend for ecommerce marketplace with medusajs
 
-<!-- trigger redeploy -->
+<!-- trigger redeployment-->
