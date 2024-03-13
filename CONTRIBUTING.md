@@ -32,7 +32,8 @@ upstream        git@github.com:BtabTechnology/btab_backdrop.git (fetch)
 upstream        git@github.com:BtabTechnology/btab_backdrop.git (push)
 ```
 
-5. The environment variables are located in `.env.template`in the root folder. Copy this file and change the name to `.env`. Edit the file and the add database url: `DATABASE_URL=<add your variable here>`\
+5. The environment variables are located in `.env.template`in the root folder. Copy this file and change the name to `.env`. Edit the file and the add database url: `DATABASE_URL=<add your variable here>`
+
 6. Start your backend:
 
 ```sh
@@ -54,7 +55,7 @@ At this point you can checkout to your local main branch and pull the freshly up
 
 ```sh
 git checkout main
-git pull upstream/main
+git pull upstream main
 ```
 
 Commit the changes and push it to your GitHub repo if you like:
