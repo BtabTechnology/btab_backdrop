@@ -58,7 +58,7 @@ git checkout main
 git pull upstream main
 ```
 
-Commit the changes and push it to your GitHub repo:
+Commit the changes and push it to your GitHub repository
 
 ```sh
 git push origin main
