@@ -57,8 +57,7 @@ At this point you can checkout to your local main branch and pull the freshly up
 git checkout main
 git pull upstream main
 ```
-
-Commit the changes and push it to your GitHub repository
+ 
 
 ```sh
 git push origin main
