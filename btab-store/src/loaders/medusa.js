@@ -1,11 +1,9 @@
 const repositories = {
     vendorRepository: require("../repositories/vendor").default,
-    // other repositories...
   }
   
   const services = {
     vendorService: require("../services/vendor").default,
-    // other services...
   }
   
   module.exports = {
