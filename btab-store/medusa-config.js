@@ -1,5 +1,4 @@
 const dotenv = require("dotenv");
-const path = require("path");
 
 let ENV_FILE_NAME = "";
 switch (process.env.NODE_ENV) {
@@ -47,7 +46,6 @@ const plugins = [
     resolve: "@medusajs/admin",
     /** @type {import('@medusajs/admin').PluginOptions} */
     options: {
-      webpackConfig: path.resolve(__dirname, "webpack.admin.config.js"),
       autoRebuild: true,
       develop: {
         open: process.env.OPEN_BROWSER !== "false",
@@ -76,7 +74,7 @@ const projectConfig = {
   jwtSecret: process.env.JWT_SECRET,
   cookieSecret: process.env.COOKIE_SECRET,
   store_cors: STORE_CORS,
-  database_url: DATABASE_URL, 
+  database_url: DATABASE_URL,
   admin_cors: ADMIN_CORS,
   file_service: "LocalFileService",
   // Uncomment the following lines to enable REDIS
@@ -87,5 +85,5 @@ const projectConfig = {
 module.exports = {
   projectConfig,
   plugins,
-  modules
+  modules,
 };

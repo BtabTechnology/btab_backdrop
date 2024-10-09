@@ -4,7 +4,6 @@
   "description": "A starter for Medusa projects.",
   "author": "Medusa (https://medusajs.com)",
   "license": "MIT",
-  "type": "commonjs",
   "keywords": [
     "sqlite",
     "postgres",
@@ -43,7 +42,6 @@
     "medusa-payment-manual": "^1.0.24",
     "medusa-payment-stripe": "^6.0.7",
     "prism-react-renderer": "^2.0.4",
-    "ts-node": "^10.9.2",
     "typeorm": "^0.3.16"
   },
   "devDependencies": {
