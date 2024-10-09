@@ -1,35 +1,31 @@
 import {
-    Entity,
-    Column,
-    PrimaryGeneratedColumn,
-    CreateDateColumn,
-    UpdateDateColumn,
-} from "typeorm"
-  
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+  CreateDateColumn,
+  UpdateDateColumn
+} from "typeorm";
+
 @Entity()
 export class Vendor {
-    @PrimaryGeneratedColumn()
-    id: string
+  @PrimaryGeneratedColumn("uuid")
+  id: string;
 
-    @Column({ type: "varchar" })
-    name: string
+  @Column()
+  name: string;
 
-    @Column({ type: "text", nullable: true })
-    description: string
+  @Column()
+  description: string;
 
-    @Column({ type: "varchar", nullable: true })
-    contact_email: string
+  @Column({ nullable: true })
+  contact_email: string;
 
-    @Column({ type: "varchar", nullable: true })
-    phone_number: string
+  @Column({ nullable: true })
+  website: string;
 
-    @Column({ type: "varchar", nullable: true })
-    website_url: string
+  @CreateDateColumn()
+  created_at: Date;
 
-    @CreateDateColumn()
-    created_at: Date
-
-    @UpdateDateColumn()
-    updated_at: Date
+  @UpdateDateColumn()
+  updated_at: Date;
 }
-  
